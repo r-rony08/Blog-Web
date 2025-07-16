@@ -27,3 +27,8 @@ class CreateBlog(LoginRequiredMixin, CreateView):
         blog_obj.save()
         return HttpResponseRedirect(reverse('index'))
 
+
+def blog_details(request, slug):
+    blog = Blog.objects.get(slug=slug)
+
+    return render(request, 'App_Blog/blog_details.html', context={'blog':blog})

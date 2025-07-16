@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 
+
 # Create your models here.
 
 class Blog(models.Model):
@@ -26,7 +27,9 @@ class Blog(models.Model):
         # Auto-generate slug from title if not provided
         if not self.slug:
             base_slug = slugify(self.blog_title)
+            
         super().save(*args, **kwargs)
+
 
 class Comment(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name='comments')
