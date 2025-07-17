@@ -11,7 +11,7 @@ A full-featured Django blog application with user authentication, profiles, blog
 - Create, edit blog posts with images  
 - Auto-generated unique slugs with Unicode support  
 - Comment and Like system with live counts  
-- Responsive UI using Bootstrap 5 
+- Responsive UI using Bootstrap 5  
 - Media upload handling (profile pics, blog images)  
 
 ---
@@ -21,68 +21,91 @@ A full-featured Django blog application with user authentication, profiles, blog
 ### Prerequisites
 
 - Python 3.8+  
-- MySQL Server 
+- MySQL Server  
 - Git  
 
 ### Steps
 
-1. **Clone the repo**
+1. Clone the repo
 
-```bash
-git clone https://github.com/yourusername/blogapp.git
-cd blogapp
+    ```bash
+    git clone https://github.com/yourusername/blogapp.git
+    cd blogapp
+    ```
 
-python -m venv env
-# Linux/Mac
-source env/bin/activate
+2. Create and activate a virtual environment
 
-# Windows
-env\Scripts\activate
+    ```bash
+    # Linux/Mac
+    python -m venv env
+    source env/bin/activate
 
-pip install -r requirements.txt
+    # Windows
+    python -m venv env
+    env\Scripts\activate
+    ```
 
-Create a .env file in the root directory
-DEBUG=True
-SECRET_KEY=your_secret_key_here
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_HOST=localhost
-DB_PORT=3306
+3. Install dependencies
 
-python manage.py makemigrations
-python manage.py migrate
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-python manage.py createsuperuser
+4. Create a `.env` file in the root directory :
 
-python manage.py collectstatic
+    ```
+    DEBUG=True
+    SECRET_KEY=your_secret_key_here
+    DB_NAME=your_database_name
+    DB_USER=your_database_user
+    DB_PASSWORD=your_database_password
+    DB_HOST=localhost
+    DB_PORT=3306
+    ```
 
-python manage.py runserver
+5. Run migrations
 
-```bash
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
 
-#Usage
-Register a user account
+6. Create a superuser
 
-Login and access profile settings
+    ```bash
+    python manage.py createsuperuser
+    ```
 
-Create blog posts with images and rich text content
+7. Collect static files
 
-View and comment on posts
+    ```bash
+    python manage.py collectstatic
+    ```
 
-Like/unlike posts
+8. Run the development server
 
-Edit your own blog posts
+    ```bash
+    python manage.py runserver
+    ```
 
-⚙️ Technologies Used
-Django 5.x
+---
 
-Python 3.8+
+## 💻 Usage
 
-MySQL
+- Register a user account  
+- Login and access profile settings  
+- Create blog posts with images and rich text content  
+- View and comment on posts  
+- Like/unlike posts  
+- Edit your own blog posts  
 
-Bootstrap 5 (with RTL support)
+---
 
-FontAwesome Icons
+## ⚙️ Technologies Used
 
-dotenv for environment variables
+- Django 5.x  
+- Python 3.8+  
+- MySQL  
+- Bootstrap 5 (with RTL support)  
+- FontAwesome Icons  
+- dotenv for environment variables  
