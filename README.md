@@ -92,13 +92,13 @@ A full-featured Django blog application with user authentication, profiles, blog
 ## 🖼️ Blog Screenshots
 
 ### 🏠 Home Page
-![Home Page](project screenshot images/Homepage.png)
+![Home Page](images/Homepage.png)
 
 ### 📝 Write Blog Post
-![Blog Post](project screenshot images/write blog.png)
+![Write Post](images/write blog.png)
 
 ### 💬 Profile Section
-![Comment Section](project screenshot images/your profile.png)
+![Comment Section](images/your profile.png)
 
 
 ## 💻 Usage
