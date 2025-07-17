@@ -11,9 +11,8 @@ A full-featured Django blog application with user authentication, profiles, blog
 - Create, edit blog posts with images  
 - Auto-generated unique slugs with Unicode support  
 - Comment and Like system with live counts  
-- Responsive UI using Bootstrap 5 (RTL support included)  
+- Responsive UI using Bootstrap 5 
 - Media upload handling (profile pics, blog images)  
-- Pagination for easy browsing of blog posts  
 
 ---
 
@@ -41,5 +40,22 @@ source env/bin/activate
 env\Scripts\activate
 
 pip install -r requirements.txt
+
+Create a .env file in the root directory
+DEBUG=True
+SECRET_KEY=your_secret_key_here
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_HOST=localhost
+DB_PORT=3306
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+python manage.py collectstatic
+
+python manage.py runserver
 
 
