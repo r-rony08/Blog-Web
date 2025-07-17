@@ -11,5 +11,7 @@ urlpatterns = [
     path('write/', views.CreateBlog.as_view(), name='CreateBlog'),
     #path('details/<slug:slug>', views.blog_details, name='blog_details'),
     path(r'^details/(?P<slug>[^/]+)/$', views.blog_details, name='blog_details'),
+    path('liked/<pk>', views.liked, name='liked_post'),
+    path('unliked/<pk>', views.unliked, name='unliked_post'),
 
 ]
