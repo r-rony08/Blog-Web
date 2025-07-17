@@ -33,3 +33,13 @@ A full-featured Django blog application with user authentication, profiles, blog
 git clone https://github.com/yourusername/blogapp.git
 cd blogapp
 
+python -m venv env
+# Linux/Mac
+source env/bin/activate
+
+# Windows
+env\Scripts\activate
+
+pip install -r requirements.txt
+
+
