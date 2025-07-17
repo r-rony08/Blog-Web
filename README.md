@@ -94,11 +94,11 @@ A full-featured Django blog application with user authentication, profiles, blog
 ### 🏠 Home Page
 ![Home Page](images/Homepage.png)
 
-### 📝 Write Blog Post
-![Home Page](images/write blog.png)
+### 📝 Write Blog
+![Write Blog](images/write%20blog.png)
 
-### 💬 Profile Section
-![Home Page](images/your profile.png)
+### 👤 Profile Section
+![Profile](images/your%20profile.png)
 
 
 ## 💻 Usage
