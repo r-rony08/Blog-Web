@@ -54,29 +54,35 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py createsuperuser
+
 python manage.py collectstatic
 
 python manage.py runserver
 
-```php
- Project Structure
-blogapp/             # Django project root
-├── App_Blog/        # Blog application
-│   ├── models.py    # Blog, Comment, Like models
-│   ├── views.py     # Blog views (List, Detail, Create, Update)
-│   ├── urls.py      # Blog URL patterns with slug converter
-│   └── templates/   # Blog-related HTML templates
-├── App_Users/       # User authentication and profiles
-│   ├── models.py    # UserProfile model
-│   ├── forms.py     # Signup, profile forms
-│   ├── views.py     # Auth views (Signup, Login, Logout, Profile)
-│   └── urls.py      # User-related URLs
-├── blog/            # Project settings and URL conf
-│   ├── settings.py  # Settings (database, static/media, templates)
-│   └── urls.py      # Main URL config
-├── templates/       # Base templates shared by apps
-├── static/          # Static assets (CSS, JS, images)
-├── media/           # Uploaded media files (profile pics, blog images)
-├── manage.py        # Django management script
-└── requirements.txt # Python dependencies
+```bash
 
+#Usage
+Register a user account
+
+Login and access profile settings
+
+Create blog posts with images and rich text content
+
+View and comment on posts
+
+Like/unlike posts
+
+Edit your own blog posts
+
+⚙️ Technologies Used
+Django 5.x
+
+Python 3.8+
+
+MySQL
+
+Bootstrap 5 (with RTL support)
+
+FontAwesome Icons
+
+dotenv for environment variables
