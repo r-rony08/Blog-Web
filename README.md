@@ -106,6 +106,6 @@ A full-featured Django blog application with user authentication, profiles, blog
 - Django 5.x  
 - Python 3.8+  
 - MySQL  
-- Bootstrap 5 (with RTL support)  
+- Bootstrap 5  
 - FontAwesome Icons  
 - dotenv for environment variables  
